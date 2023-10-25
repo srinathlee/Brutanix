@@ -1,0 +1,341 @@
+  @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Lato&family=Open+Sans&family=Poppins&family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: inter;
+}
+.hero-bg-container{
+    position: relative;
+    height: 100vh;
+}
+
+.base-container{
+    max-width: 1300px;
+    width:100%;
+    margin: 0 auto;
+}
+.home-content-container{
+    display: flex;
+    justify-content:space-between;
+    height: 85%;
+      
+    }
+    .circle-video-container{
+        align-self: flex-end;
+        margin-bottom: 20px;
+    }
+    .main-heading-container{
+        align-self: flex-start;
+        margin-top: 50px;
+    }
+
+body{
+    background-color: #2a2a2a;
+}
+
+.main-backgound-video{
+    position:absolute;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+}
+
+.navbar-bg-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    width:100%;
+    margin: 0 auto;
+    height:15%;
+
+}
+.nav-link-container{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:#ffffff;
+    padding:16px 20px;
+    border-radius: 25px;
+}
+.nav-link-container li a{
+    text-decoration: none;
+    font-size: 16px;
+    width:100%;
+    padding: 16px 20px;
+    font-family: inter;
+    color:#000;
+}
+.contact-button{
+    background-color: #2a2a2a;
+    border-radius:  25px;
+    padding:10px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+.contact-button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-right:5px;
+}
+.fa-rotate-by{
+    transform: rotate(-40deg);
+    color: #fff;
+    font-weight:100px;
+}
+.navbar-toggle{
+    font-size: 25px;
+}
+.nav-sticky-container{
+    display:flex;
+    align-items:center;
+    gap: 15px;
+}
+.text{
+    font-size: 64px;
+}
+.main-heading-container{
+    width:600px;
+}
+
+.transform-text{
+    font-weight: bold;
+    color:#7209b7;  
+    position:relative;
+    /* width:600px; */
+}
+
+/* ______________mainheading transformation__________________ */
+
+
+.tranform-text{
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+
+/* _________________________________________circular text animation_________________________________________ */
+
+.text-circlec-bg{
+    position:relative;
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-text{
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+.circle-text span{
+    position: absolute;
+    left: 50%;
+    font-size: .7rem;
+    transform-origin: 0 50px;
+    animation: anim 10s linear infinite;
+
+}
+@keyframes anim {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+.play-button-container{
+    position: absolute;
+    top:20px;
+    left:30px;
+    background-color: white;
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-play-button{
+    font-size: 25px;
+}
+
+.video-container{
+    width:"320px";
+    height:"180px";
+    border-radius:20px;
+    overflow: hidden;
+}
+
+.circle-video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.outer-circle-container{
+    position: relative;
+    right:250px;
+    top:70px
+
+}
+
+
+
+
+
+/* _______________________________________about us______________________________________ */
+
+.about-bg-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    margin-bottom: 50px;
+}
+.about-text-container {
+    width:50%;
+}
+.about-text-container h1{
+    font-size: 32px;
+    color:#eee;
+    margin-bottom: 10px;
+}
+
+.about-text-container p{
+    font-size: 20px;
+    color:#eee;
+    opacity: 0.4;
+    line-height: 1.5;
+ 
+}
+.brutanix-stamp-container{
+    width: 30%;
+}
+
+
+/* _______________________________________our works______________________________________ */
+.our-word-heading-section h1{
+    color: #eee;
+    font-size: 42px;
+}
+
+.our-word-heading-section p{
+    font-size: 20px;
+    color:#eee;
+    opacity: 0.4;
+    line-height: 1.5;
+}
+
+.card-scroller-bg-container{
+display: flex;
+flex-direction: row;
+/* flex-wrap: nowrap; */
+gap: 10px;
+width:100%;
+margin-bottom: 20px;
+overflow-x: scroll;
+}
+
+.card-scroller-bg-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.my-card{
+    border: 2px solid gray;
+    border-radius: 30px;
+    padding:50px;
+    position: relative;
+    /* width:600px; */
+    width:fit-content;
+}
+.card-strap{
+    background-color: #aef782;
+    width:250px;
+    height:50px;
+    position: absolute;
+    top:0;
+    left: 0;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.card-header h1{
+    font-size: 32px;
+    background: -webkit-linear-gradient(#7209B7,#3772FF);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom: 10px;
+}
+
+.card-header p{
+    font-size: 20px;
+    color:#eee;
+    opacity: 0.4;
+    width:100%;
+    max-width: 600px;
+    text-align: end;
+}
+.card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.card-application-img{
+    width:400px;
+}
+.card-ceo-section{
+    background-color: gray;
+    border-radius: 20px;
+    padding:20px;
+    width: fit-content;
+}
+.card-ceo-header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.card-cep-para{
+    min-width: 300px;
+    max-width: 400px;
+}
+.ceo-image{
+    width:50px;
+    height:50px;
+}
+.card-ceo-details h1{
+    font-size: 16px;
+}
+.card-ceo-details p{
+    font-size: 10px;
+}
+.ceo-logoimage{
+    width:35px;
+}
+.card-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.our-word-heading-section{
+    margin-bottom: 40px;
+}
