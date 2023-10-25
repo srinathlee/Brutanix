@@ -43,6 +43,24 @@ body{
     width: 100%;
     height: 100%; 
 }
+.custom-toggle{
+    cursor: pointer;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 4px;
+}
+.custom-toggle span{
+    padding:2px 16px;
+    border-radius: 20px;
+    background-color:#2a2a2a;
+}
+.custom-toggle .toggle-2{
+    padding:2px 12px;
+  }
+.custom-toggle .toggle-3{
+  padding:2px 8px;
+}
 
 .navbar-bg-container{
     display: flex;
@@ -174,6 +192,7 @@ body{
 }
 .custom-play-button{
     font-size: 25px;
+    cursor: pointer;
 }
 
 .video-container{
@@ -226,6 +245,25 @@ body{
 }
 .brutanix-stamp-container{
     width: 30%;
+    position: relative;
+}
+
+.brutanix_stamp_circle{
+    animation: anim 10s linear infinite;
+}
+.brutanix_stamp_logo{
+    position: absolute;
+    left: 110px;
+    top:100px;
+}
+
+@keyframes anim {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
 }
 
 
