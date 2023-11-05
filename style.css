@@ -358,45 +358,63 @@ body{
     }
 }
 @media(max-width:580px){
+    .brutanix-stamp-container{
+        align-self: center;
+        /* margin-right: 120px; */
+        width: 50%;
+        margin-bottom: 20px;
+    }
     .about-text-container {
-        width:60%;
+        width:100%;
     }
     .about-text-container h1{
-        font-size: 12px;
+        font-size: 30px;
     }
     .about-text-container p{
-        font-size: 8px;
+        font-size: 16px;
+
     }
     .brutanix_stamp_circle{
-        width: 170px;
+        width: 250px;
     }
     .brutanix_stamp_logo{
-        width: 50px;
-        left: 60px;
-        top:60px;
+        width: 80px;
+        left: 85px;
+        top:80px;
+    }
+    .about-bg-container{
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
 @media(max-width:480px){
+    .brutanix-stamp-container{
+        align-self: center;
+        width: 60%;
+        margin-bottom: 20px;
+    }
     .about-text-container {
-        width:60%;
+        width:100%;
     }
     .about-text-container h1{
-        font-size: 12px;
+        font-size: 30px;
     }
     .about-text-container p{
-        font-size: 6px;
+        font-size: 16px;
+
     }
     .brutanix_stamp_circle{
-        width: 120px;
+        width: 200px;
     }
     .brutanix_stamp_logo{
-        width: 40px;
-        left: 40px;
-        top:37px;
+        width: 60px;
+        left: 70px;
+        top:70px;
     }
     .about-bg-container{
-        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -676,6 +694,9 @@ overflow-x: scroll;
     }
     
     @media(max-width:570px){
+        .card-body{
+            flex-direction: column;
+        }
         .card-scroller-bg-container{
             display: flex;
             flex-direction: column;
@@ -685,12 +706,13 @@ overflow-x: scroll;
             width: 100%;
             margin-bottom: 20px;
           }
+          
         .our-work-heading-section{
             margin-bottom: 20px;
         }
         .card-application-img{
-            width:250px;
-            height: 200px;
+            width:100%;
+            height: 100%;
         }
         .card-header h1{
             font-size: 22px;
@@ -723,8 +745,9 @@ overflow-x: scroll;
         
         }
         .card-ceo-section{
-            width:100%;
+            width:fit-content;
             padding:10px;
+            align-self: flex-start;
         
         }
         .card-strap{
@@ -735,10 +758,7 @@ overflow-x: scroll;
         }
 
         @media(max-width:510px){
-            .card-application-img{
-                width:200px;
-                height: 150px;
-            }
+            
             .card-ceo-details h1{
                 font-size: 8px;
             
@@ -776,10 +796,8 @@ overflow-x: scroll;
         }
 
         @media(max-width:430px){
-            .card-application-img{
-                width:150px;
-                height: 120px;
-            }
+           
+            
             .card-ceo-details h1{
                 font-size: 6px;
                 margin-bottom: 3px;
@@ -1523,7 +1541,7 @@ align-items: center;
     display: flex;
     justify-content: space-between;
     padding-top: 200px;
-    /* padding-bottom: 100px; */
+    padding-bottom: 10px;
   }
   .footer-stamp{
      position: absolute;
@@ -1667,7 +1685,8 @@ align-items: center;
         font-size:28px;
     }
     .fotter-socials svg{
-        width:20px;
+        width:40px;
+    
         margin-right: 10px;
     }
     .footer-stamp{
@@ -1683,7 +1702,7 @@ align-items: center;
         padding-top: 130px;
      }
      .fotter-contact-widget svg{
-        width:16px;
+        width:30px;
      }
      .fotter-socials{
         align-self: flex-start;
