@@ -377,6 +377,28 @@ body{
     }
 }
 
+@media(max-width:480px){
+    .about-text-container {
+        width:60%;
+    }
+    .about-text-container h1{
+        font-size: 12px;
+    }
+    .about-text-container p{
+        font-size: 6px;
+    }
+    .brutanix_stamp_circle{
+        width: 120px;
+    }
+    .brutanix_stamp_logo{
+        width: 40px;
+        left: 40px;
+        top:37px;
+    }
+    .about-bg-container{
+        margin-bottom: 10px;
+    }
+}
 
 
 
@@ -752,6 +774,70 @@ overflow-x: scroll;
             }
 
         }
+
+        @media(max-width:430px){
+            .card-application-img{
+                width:150px;
+                height: 120px;
+            }
+            .card-ceo-details h1{
+                font-size: 6px;
+                margin-bottom: 3px;
+            
+            }
+            .card-ceo-details p{
+                font-size: 4px;
+
+            }
+            .card-cep-para{
+                min-width: 150px;
+               font-size: 8px;
+               line-height: 10px;
+               font-weight: normal;
+               margin: 0px;
+            }
+            .ceo-image{
+                width:20px;
+                height:20px;
+            
+            }
+            .ceo-logoimage{
+                width:15px;
+            }
+            .card-ceo-section{
+                padding:10px;
+            
+            }
+            .card-ceo-header{
+            margin-bottom: 10px;
+            }
+            .card-scroller-bg-container{
+                margin-bottom: 40px;
+            }
+
+        }
+        @media(max-width:380px){
+            .card-cep-para{
+                min-width: 120px;
+               font-size: 6px;
+               line-height: 8px;
+            }
+            .card-strap{
+                width:110px;
+                height: 35px;
+            }
+            .card-header h1{
+                font-size: 16px;
+            }
+            .card-header p{
+                font-size: 10px;
+            }
+            .our-work-heading-section h1{
+                color: #eee;
+                font-size: 28px;
+            }
+        }
+
 /* ________________________our services_____________________________________ */
 
 .our-services-main-heading{
@@ -835,6 +921,10 @@ overflow-x: scroll;
     height:230px;
     margin-right: 15px;
     }
+    .our-services-main-heading{
+        color: #eee;
+        font-size: 28px;
+    }
 }
 
 /* _________________________________services videos__________________________________ */
@@ -915,6 +1005,21 @@ overflow-x: scroll;
     }
     .video-description p{
         font-size: 12px;
+    }
+}
+@media(max-width:480px){
+    .service-video-container{
+        width:44%;
+        height: 300px;
+    }
+    .extra-services-video-bg{
+        gap: 10px;
+    }
+}
+@media(max-width:400px){
+    .service-video-container{
+        width:100%;
+        height: 350px;
     }
 }
 
@@ -1623,6 +1728,10 @@ align-items: center;
       }
       .fotter-socials h1{
         margin-bottom: 10px;
+      }
+      .footer-copyright{
+        padding-top: 10px;
+        
       }
     
 }
