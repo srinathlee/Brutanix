@@ -2,6 +2,7 @@
 
 
 *{
+  
     margin: 0px;
     padding: 0px;
     box-sizing:border-box;
@@ -65,9 +66,7 @@ body{
     display:flex;
     align-items:center;
     gap: 15px;
-    position: fixed;
-    top: 45px;
-    right: 140px;
+
 }
 .nav-link-container{
     list-style: none;
@@ -77,6 +76,7 @@ body{
     background-color:#ffffff;
     padding:16px 20px;
     border-radius: 25px;
+    margin: 0px;
 }
 .nav-link-container li a{
     text-decoration: none;
@@ -225,29 +225,163 @@ body{
     font-size: 25px;
     cursor: pointer;
 }
-
 .video-container{
-    width:"320px";
-    height:"180px";
-    border-radius:20px;
+    position: relative;
+    width: 320px;
+    height: 180px;
+    border-radius: 10px;
     overflow: hidden;
 }
-/* .working-video{
-    width:"320px";
-     height:"180px";
-} */
+
+#vid1{
+    position:absolute;
+    z-index: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    border-radius: 10px;
+    overflow: hidden;
+
+}
 .circle-video-container{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+ 
 }
 .outer-circle-container{
     position: relative;
     right:250px;
-    top:70px
-
+    top:70px;
+    z-index: 1111;
 }
 
+
+@media (max-width:990px) {
+    .text{
+        font-size: 58px;
+    }   
+    .nav-link-container{
+        display: none;
+    }
+    .home-content-container{
+        flex-direction: column;
+           
+         }
+}
+
+
+@media (max-width:770px) {
+    .text{
+        font-size: 52px;
+    } 
+    .main-heading-container{
+        width: 500px ;
+    }
+    .video-container{
+        position: relative;
+        width: 280px;
+        height: 150px;
+        border-radius: 10px;
+        overflow: hidden;
+    }  
+    .outer-circle-container{
+        right:210px;
+        top:70px;
+        }
+    
+    
+}
+@media (max-width:570px) {
+    .text{
+        font-size: 44px;
+    } 
+    .fa-rotate-by{
+        font-size: 12px;
+    }
+    .contact-button a{
+        font-size: 12px
+    }
+    .main-heading-container{
+        width: 300px ;
+    }
+    .video-container{
+        position: relative;
+        width: 250px;
+        height: 130px;
+        border-radius: 10px;
+        overflow: hidden;
+    }  
+    .outer-circle-container{
+        right:180px;
+        top:75px;
+        
+    }
+    .play-button-container{
+        position: absolute;
+        top:15px;
+        left:35px;
+        background-color: white;
+        height:50px;
+        width:50px;
+    }
+    .circle-text span{
+        position: absolute;
+        left: 50%;
+        font-size: .5rem;
+        transform-origin: 0 40px;
+    }
+    .custom-play-button{
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:440px) {
+    .text{
+        font-size: 34px;
+    } 
+    .main-heading-container{
+        width: 300px ;
+    }
+    .video-container{
+        position: relative;
+        width: 250px;
+        height: 130px;
+        border-radius: 10px;
+        overflow: hidden;
+    }  
+    .outer-circle-container{
+        right:180px;
+        top:70px;
+        
+    }
+    .contact-button{
+        padding:10px 15px;    
+    }
+    .logo img{
+        width: 180px;
+    }
+    .contact-button a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+        margin-right:5px;
+    }
+
+
+}
+@media (max-width:400px) {
+    .contact-button{
+        padding:8px 12px;    
+    }
+    .logo img{
+        width: 150px;
+    }
+    .contact-button a{
+        font-size: 10px;
+    }
+}
 
 
 
@@ -260,6 +394,7 @@ body{
     justify-content: space-between;
     align-items:center;
     margin-bottom: 50px;
+    padding-top: 60px;
 }
 .about-text-container {
     width:50%;
@@ -1612,9 +1747,7 @@ align-items: center;
     font-weight: 400px;
     font-family: 'Inter', sans-serif !important;
 }
-.small-divice-socials{
-    display: none;
-}
+
 .footer-small-container{
     width: 100%;
     display: flex;
@@ -1644,10 +1777,10 @@ align-items: center;
     .fotter-socials h1{
         font-size:28px;
     }
-    .fotter-socials svg{
-        width:20px;
+    /* .fotter-socials svg{
+        width:80px;
         margin-right: 10px;
-    }
+    } */
     .footer-stamp{
 
         width:200px;
