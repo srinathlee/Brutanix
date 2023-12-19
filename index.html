@@ -22,36 +22,31 @@
   <body>
     <div>
       <!-- _________________________________Home section__________________________________ -->
-      <div class="hero-bg-container">
+      <div id="home" class="hero-bg-container">
         <video autoplay muted loop class="main-backgound-video">
           <source src="./assets/hero.mp4" type="video/mp4" />
         </video>
 
         <nav class="navbar-bg-container base-container">
           <!-- <div class="nav-left-part"> -->
-            <div class="logo">
-              <a href="#logo"><img src="./assets/brutanixlogo.png" /></a>
-            </div>
+          <div class="logo">
+            <a href="#logo"><img src="./assets/brutanixlogo.png" /></a>
+          </div>
 
-            <ul class="nav-link-container">
-              <li><a href="#">Works</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
+          <ul class="nav-link-container">
+            <li><a href="#work">Works</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
           <!-- </div> -->
 
           <div class="nav-right-part">
             <div class="nav-sticky-container">
               <div class="contact-button">
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
                 <i class="fa-solid fa-arrow-right-long fa-rotate-by"></i>
               </div>
-              <i class="custom-toggle">
-                <span class="toggle-1"></span>
-                <span class="toggle-2"></span>
-                <span class="toggle-3"></span>
-              </i>
             </div>
           </div>
         </nav>
@@ -75,19 +70,37 @@
             </div>
 
             <div class="video-container">
-              <video
-                id="vid1"
-                class="working-video">
+              <video id="vid1" class="working-video">
                 <source src="./assets/workingvideo.mp4" />
               </video>
             </div>
           </div>
         </div>
+
+               <!-- new text rotation -->
+      <!-- <div class="circular-text-container">
+        <div class="outer-circle-container">
+          <div class="text-circlec-bg">
+            <div onclick="videoControlles()" class="circle-text">
+              <p>design and development stdioshhhhhh</p>
+              <div class="play-button-container">
+                <i class="custom-play-button fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+
       </div>
+
+
+
 
       <!-- _________________________________about section__________________________________ -->
 
-      <div class="about-bg-container base-container section">
+      <div id="about" class="about-bg-container base-container section">
         <div class="brutanix-stamp-container">
           <img
             class="brutanix_stamp_circle"
@@ -102,17 +115,25 @@
         <div class="about-text-container">
           <h1>A short note</h1>
           <p>
-            Welcome to BRUTANIX, where creativity knows no bounds. Despite our small team, we've achieved remarkable results. We turn ideas into reality, delivering high-quality design and development projects that leave clients delighted. Our size doesn't limit our impact; it fuels our creativity and determination. Join us on this extraordinary journey, and discover how we've made a significant mark in the design and development industry. We may be small, but our accomplishments are nothing short of extraordinary. 
+            Welcome to BRUTANIX, where creativity knows no bounds. Despite our
+            small team, we've achieved remarkable results. We turn ideas into
+            reality, delivering high-quality design and development projects
+            that leave clients delighted. Our size doesn't limit our impact; it
+            fuels our creativity and determination. Join us on this
+            extraordinary journey, and discover how we've made a significant
+            mark in the design and development industry. We may be small, but
+            our accomplishments are nothing short of extraordinary.
           </p>
         </div>
       </div>
 
       <!-- _________________________________our work section__________________________________ -->
 
-      <div class="our-work-heading-section base-container">
+      <div id="work" class="our-work-heading-section base-container">
         <h1>Our Works</h1>
         <p>
-          Explore our portfolio of exceptional design and development projects that showcase our creativity and expertise.  
+          Explore our portfolio of exceptional design and development projects
+          that showcase our creativity and expertise.
         </p>
       </div>
 
@@ -122,7 +143,8 @@
           <div class="card-header">
             <h1>Franklin Ev</h1>
             <p>
-              An innovative service app project designed to streamline and simplify the company's service booking process.
+              An innovative service app project designed to streamline and
+              simplify the company's service booking process.
             </p>
           </div>
           <div class="card-body">
@@ -142,8 +164,47 @@
                 <img class="ceo-logoimage" src="./assets/brutanixceologo.png" />
               </div>
               <p class="card-cep-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Your mobile app development exceeded expectations. The sleek
+                design and flawless functionality showcase your commitment to
+                excellence. Thank you for bringing our vision to life so
+                effectively
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card">
+          <div class="card-strap"></div>
+          <div class="card-header">
+            <h1>Tycoo industries</h1>
+            <p>
+              A web app strategically crafted to boost the Company's online
+              presence and outshine competitors.
+            </p>
+          </div>
+          <div class="card-body">
+            <img
+              class="card-application-img"
+              alt="card-image"
+              src="./assets/secondwork.png"
+            />
+
+            <div class="card-ceo-section">
+              <div class="card-ceo-header">
+                <img
+                  class="ceo-image work-ceo-image"
+                  src="./assets/tycoceoimage.jpeg"
+                />
+                <div class="card-ceo-details">
+                  <h1>Rakesh Sharma</h1>
+                  <p>- CEO, Tycoo industri</p>
+                </div>
+                <img class="ceo-logoimage" src="./assets/brutanixceologo.png" />
+              </div>
+              <p class="card-cep-para">
+                Your website development is remarkable. It looks great, works
+                well, and helps us stand out online. Thanks for your excellent
+                contribution to our company's success.
               </p>
             </div>
           </div>
@@ -154,28 +215,31 @@
           <div class="card-header">
             <h1>Franklin Ev</h1>
             <p>
-              An innovative service app project designed to streamline and simplify the company's service booking process.
+              A website for an industrial sealing products company, crafted to
+              boost online presence and attract customers.
             </p>
           </div>
           <div class="card-body">
             <img
-              class="card-application-img"
+              class="workcard-img card-application-img"
               alt="card-image"
-              src="./assets/brutanix_card_image.png"
+              src="./assets/thirdwork.png"
             />
 
             <div class="card-ceo-section">
               <div class="card-ceo-header">
-                <img class="ceo-image" src="./assets/clientimage-1.png" />
+                <img class="ceo-image" src="./assets/brutanixceoimg.png" />
                 <div class="card-ceo-details">
-                  <h1>Marie Ann</h1>
+                  <h1>Shashidar Kumar</h1>
                   <p>- CEO, Franklin EV</p>
                 </div>
                 <img class="ceo-logoimage" src="./assets/brutanixceologo.png" />
               </div>
               <p class="card-cep-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Your web development work has been exceptional. The website's
+                design, functionality, and SEO optimization are outstanding,
+                enhancing our online presence and customer engagement. Thank you
+                for your excellent work.
               </p>
             </div>
           </div>
@@ -184,17 +248,18 @@
         <div class="my-card">
           <div class="card-strap"></div>
           <div class="card-header">
-            <h1>Franklin Ev</h1>
+            <h1>E-commerce</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Revolutionize your business with our e-commerce app development.
+              We deliver sleek interfaces and powerful features for an unmatched
+              online shopping experience
             </p>
           </div>
           <div class="card-body">
             <img
-              class="card-application-img"
+              class="workcard-img card-application-img"
               alt="card-image"
-              src="./assets/brutanix_card_image.png"
+              src="./assets/ecommmerce-work-2.png"
             />
 
             <div class="card-ceo-section">
@@ -202,46 +267,15 @@
                 <img class="ceo-image" src="./assets/brutanixceoimg.png" />
                 <div class="card-ceo-details">
                   <h1>Marie Ann</h1>
-                  <p>- CEO, Franklin EV</p>
+                  <p>XXXXXXXXX</p>
                 </div>
                 <img class="ceo-logoimage" src="./assets/brutanixceologo.png" />
               </div>
               <p class="card-cep-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="my-card">
-          <div class="card-strap"></div>
-          <div class="card-header">
-            <h1>Franklin Ev</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div class="card-body">
-            <img
-              class="card-application-img"
-              alt="card-image"
-              src="./assets/brutanix_card_image.png"
-            />
-
-            <div class="card-ceo-section">
-              <div class="card-ceo-header">
-                <img class="ceo-image" src="./assets/brutanixceoimg.png" />
-                <div class="card-ceo-details">
-                  <h1>Marie Ann</h1>
-                  <p>- CEO, Franklin EV</p>
-                </div>
-                <img class="ceo-logoimage" src="./assets/brutanixceologo.png" />
-              </div>
-              <p class="card-cep-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Prioritize seamless UX, optimize mobile responsiveness, ensure
+                security, streamline checkout, plan for scalability, verify
+                integrations, conduct thorough testing, and maintain open
+                communication for e-commerce success
               </p>
             </div>
           </div>
@@ -250,132 +284,109 @@
 
       <!-- _________________________________our services section__________________________________ -->
 
-      <div class="our-services-bg-container base-container">
+      <div id="services" class="our-services-bg-container base-container">
         <h1 class="our-services-main-heading">Our Services</h1>
-        <!-- <div class="services-scroll-bg-section">
-          <div class="each-services">
-            <div class="service-banner-section">
-              <p class="service-banner-name">Design</p>
-              <img class="service-banner" src="./assets/designbanner.png" />
-              
+
+        <div class="design-service">
+          <h1 class="each-service-heading">De<span>sign</span></h1>
+
+          <div class="services-image-banner">
+            <img src="./assets/servicesimage.png" />
+          </div>
+
+          <h1 class="design-service-heading">Visually Appealing Design</h1>
+
+          <div class="development-cards">
+            <div class="services-design-card">
+              <div class="service-card-description">
+                <h1 class="service-card-heading">Website Design</h1>
+                <p class="service-card-para">
+                  We excel in crafting captivating, user-friendly websites,
+                  tailoring designs to your unique brand identity and ensuring a
+                  powerful online presence.
+                </p>
+              </div>
             </div>
-            <div class="service-items">
-              <h1 class="services-item-name">App Design</h1>
-              <img class="service-img" src="./assets/app-design-item.jpg" />
-              <p class="services-item-para">
-                We specialize in crafting exceptional app designs tailored to
-                your unique needs. Our experienced team of designers and
-                developers ensures your mobile and web applications offer a
-                seamless user experience and a visually captivating interface.
-                With a commitment to detail and the latest technology, we bring
-                your digital vision to life.
+
+            <div class="services-design-card">
+              <h1 class="service-card-heading">App Design</h1>
+              <p class="service-card-para">
+                We specialize in delivering exceptional app design services,
+                creating user-friendly and visually stunning mobile applications
+                that captivate and engage.
               </p>
             </div>
-
-            <div class="service-items">
-              <h1 class="services-item-name">Website Design</h1>
-              <img class="service-img" src="./assets/website-design-item.jpg" />
-
-              <p class="services-item-para">
-                We are your go-to destination for professional website design
-                services. Our expert team combines creativity and technical
-                expertise to create websites that captivate users and achieve
-                your specific goals. From sleek user interfaces to responsive
-                design, we craft visually appealing and functional websites that
-                leave a lasting digital impression.
+            <div class="services-design-card">
+              <h1 class="service-card-heading">Logo Design</h1>
+              <p class="service-card-para">
+                We excel in crafting exceptional logos, delivering top-notch
+                logo design services that captivate and define your brand's
+                identity with precision.
               </p>
             </div>
-
-            <div class="service-items">
-              <h1 class="services-item-name">Logo Design</h1>
-              <img class="service-img" src="./assets/logo-desing-item.jpg" />
-              <p class="services-item-para">
-                Our expertise lies in delivering impactful logo design services
-                that resonate with your brand's identity. With a creative team
-                dedicated to crafting unique, memorable logos, we ensure your
-                business stands out. Our designs encapsulate your values and
-                vision, leaving a lasting impression that sets you apart in the
-                market.
+            <div class="services-design-card">
+              <h1 class="service-card-heading">Graphic Design</h1>
+              <p class="service-card-para">
+                We excel in delivering top-tier graphic design services,
+                combining creativity and expertise to bring your vision to life
+                with precision.
               </p>
             </div>
-
-            <div class="service-items">
-              <h1 class="services-item-name">Graphic Design</h1>
-              <img class="service-img" src="./assets/graphic-design-item.gif" />
-              <p class="services-item-para">
-                We excel in delivering top-notch graphic design services that
-                cater to your creative needs. Our skilled team of designers
-                transforms concepts into stunning visuals, whether it's for
-                branding, marketing, or digital content. With an eye for
-                aesthetics and a passion for innovation, we're here to bring
-                your ideas to life.
+            <div class="services-design-card">
+              <h1 class="service-card-heading">UI/UX Design</h1>
+              <p class="service-card-para">
+                We specialize in delivering exceptional UI/UX design services,
+                crafting user-centric experiences that captivate and innovate,
+                setting your brand apart.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="services-scroll-bg-section" style="padding-bottom: 30px">
-          <div class="each-services">
-            <div class="service-banner-section">
-              <img
-                class="service-banner"
-                src="./assets/developmentbanner.png"
-              />
-              <p class="service-banner-name">Development</p>
-            </div>
-            <div class="service-items">
-              <h1 class="services-item-name">Website</h1>
-              <img class="service-img" src="./assets/website-dev-item.jpg" />
-              <p class="services-item-para">
-                Our expertise lies in website development, where we turn
-                concepts into functional and engaging online experiences. With a
-                seasoned team of developers, we ensure your website is
-                responsive, user-friendly, and tailored to your specific
-                requirements. We're dedicated to creating web solutions that
-                align perfectly with your digital goals.
+        <div class="design-service">
+          <h1 class="each-service-heading"><span>Deve</span>lopment</h1>
+
+          <div class="services-image-banner">
+            <img src="./assets/servicesimage.png" />
+          </div>
+
+          <h1 class="design-service-heading">Visually Appealing Design</h1>
+
+          <div class="development-cards">
+            <div class="services-design-card">
+              <h1 class="service-card-heading">Website Development</h1>
+              <p class="service-card-para">
+                We specialize in exceptional website development services,
+                crafting innovative, user-friendly, and high-performance online
+                solutions for diverse businesses."
               </p>
             </div>
-
-            <div class="service-items">
-              <h1 class="services-item-name">App</h1>
-              <img class="service-img" src="./assets/mobile-dev-item.jpg" />
-              <p class="services-item-para">
-                Our expertise lies in app development, where we transform
-                concepts into functional, cutting-edge mobile and web
-                applications. With a talented team of developers, we bring your
-                ideas to life, ensuring a seamless user experience and robust
-                functionality. Whether it's for iOS, Android, or web, we turn
-                your vision into reality.
+            <div class="services-design-card">
+              <h1 class="service-card-heading">App Development</h1>
+              <p class="service-card-para">
+                We excel in delivering exceptional app development services,
+                crafting innovative, user-friendly solutions that redefine
+                digital experiences..
               </p>
             </div>
-
-            <div class="service-items">
-              <h1 class="services-item-name">E-commerce</h1>
-              <img class="service-img" src="./assets/e-commerce-item.jpg" />
-              <p class="services-item-para">
-                Our e-commerce development expertise sets us apart. We
-                specialize in creating robust online shopping platforms tailored
-                to your business needs. Our seasoned team of developers ensures
-                seamless transactions, secure payment gateways, and engaging
-                user experiences. We're committed to building e-commerce
-                solutions that drive growth and customer satisfaction.
+            <div class="services-design-card">
+              <h1 class="service-card-heading">E-commerce Development</h1>
+              <p class="service-card-para">
+                We offer exceptional e-commerce development services, ensuring
+                seamless online shopping experiences, robust functionality, and
+                stunning design for your business's success.
               </p>
             </div>
-
-            <div class="service-items">
-              <h1 class="services-item-name">Maintanance</h1>
-              <img class="service-img" src="./assets/maintenance-item.jpg" />
-              <p class="services-item-para">
-                Our dedicated team specializes in website maintenance, ensuring
-                your online presence remains seamless and up-to-date. We handle
-                everything from regular updates and security patches to content
-                management and performance optimization. With us, your website
-                stays in peak condition, providing a reliable and engaging user
-                experience for your visitors.
+            <div class="services-design-card">
+              <h1 class="service-card-heading">Maintenance</h1>
+              <p class="service-card-para">
+                Our top-notch application maintenance services ensure seamless
+                functionality, reliability, and optimal performance, keeping
+                your software running at its
               </p>
             </div>
           </div>
-        </div> -->
+        </div>
 
         <div class="extra-services-video-bg">
           <div class="service-video-container">
@@ -392,10 +403,10 @@
             <div class="video-description">
               <h1>Marketing</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                We amplify brands through expert marketing services. From
+                strategic planning to dynamic execution, our team is dedicated
+                to enhancing your online presence and driving impactful results
+                in the digital realm.
               </p>
             </div>
           </div>
@@ -414,10 +425,10 @@
             <div class="video-description">
               <h1>Branding</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Elevate your brand with our comprehensive branding services.
+                From captivating logos to a cohesive visual identity, we partner
+                with you to define and amplify your unique story, leaving a
+                lasting impression
               </p>
             </div>
           </div>
@@ -436,10 +447,10 @@
             <div class="video-description">
               <h1>SEO</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Enhance your online visibility with our top-notch SEO services.
+                We employ strategic techniques to boost rankings, drive organic
+                traffic, and optimize your digital presence. Stay ahead in
+                search results with us
               </p>
             </div>
           </div>
@@ -454,9 +465,9 @@
             <div class="avatar ava-1">
               <div class="avatar-content-bg avatar-content-bg-1">
                 <div class="tolltip-header">
-                  <img src="./assets/person-3.png" />
+                  <img src="./assets/tycoceoimage.jpeg" />
                   <div class="tooltip-header-name-stars">
-                    <h1>person-1</h1>
+                    <h1>Rakesh Sharma</h1>
                     <div class="tooltip-stars-bg">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -466,9 +477,9 @@
                   </div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam,
+                  Impressive web development, elevating online presence,
+                  valuable contribution to our company's success. Thank you for
+                  your work.
                 </p>
               </div>
             </div>
@@ -488,9 +499,9 @@
                   </div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam,
+                  Your website development is remarkable. It looks great, works
+                  well, and helps us stand out online. Thanks for your excellent
+                  contribution to our company's success.
                 </p>
               </div>
             </div>
@@ -498,7 +509,7 @@
             <div class="avatar ava-3">
               <div class="avatar-content-bg avatar-content-bg-3">
                 <div class="tolltip-header">
-                  <img src="./assets/person-1.png" />
+                  <img src="./assets/person-3.png" />
                   <div class="tooltip-header-name-stars">
                     <h1>perso-3</h1>
                     <div class="tooltip-stars-bg">
@@ -544,10 +555,13 @@
               <span class="priority-tagline">Priority</span>
             </h1>
             <p>
-              Our clients speak for our excellence. They've praised our dedication, creative solutions, and impeccable service. Their words reflect the value we bring to their projects. See what they have to say.
+              Our clients speak for our excellence. They've praised our
+              dedication, creative solutions, and impeccable service. Their
+              words reflect the value we bring to their projects. See what they
+              have to say.
             </p>
           </div>
-
+              <!-- _________________horizontal-scrollbar_________________ -->
           <div class="clients-cards-scroller">
             <div class="card-ceo-section clietn-card" style="--delay: -1">
               <div class="card-ceo-header client-card-header">
@@ -555,15 +569,19 @@
                   class="ceo-image client-ceo-image"
                   src="./assets/clientimage-1.png"
                 />
-                <div class="card-ceo-details client-card-ceo-details" >
+                <div class="card-ceo-details client-card-ceo-details">
                   <h1>Shashidar Kumar</h1>
                   <p>- CEO, Franklin EV</p>
                 </div>
-                <img class="client-ceo-logoimage" src="./assets/brutanixceologo.png" />
+                <img
+                  class="client-ceo-logoimage"
+                  src="./assets/brutanixceologo.png"
+                />
               </div>
               <p class="card-cep-para client-card-cep-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Your website development is remarkable. It looks great, works
+                well, and helps us stand out online. Thanks for your excellent
+                contribution to our company's success.
               </p>
             </div>
 
@@ -571,18 +589,21 @@
               <div class="card-ceo-header">
                 <img
                   class="ceo-image client-ceo-image"
-                  src="./assets/brutanixceoimg.png"
+                  src="./assets/tycoceoimage.jpeg"
                 />
-                <div class="card-ceo-details  client-card-ceo-details">
-                  <h1>person-2</h1>
-                  <p>- CEO, Franklin EV</p>
+                <div class="card-ceo-details client-card-ceo-details">
+                  <h1>Rakesh Sharma</h1>
+                  <p>- CEO, Tycoo indst</p>
                 </div>
-                <img class="client-ceo-logoimage" src="./assets/brutanixceologo.png" />
+                <img
+                  class="client-ceo-logoimage work-ceo-image"
+                  src="./assets/brutanixceologo.png"
+                />
               </div>
 
               <p class="card-cep-para client-card-cep-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Impressive web development, elevating online presence, valuable
+                contribution to our company's success. Thank you for your work.
               </p>
             </div>
 
@@ -592,107 +613,159 @@
                   class="ceo-image client-ceo-image"
                   src="./assets/brutanixceoimg.png"
                 />
-                <div class="card-ceo-details  client-card-ceo-details">
-                  <h1>person-3</h1>
-                  <p>- CEO, Franklin EV</p>
+                <div class="card-ceo-details client-card-ceo-details">
+                  <h1>client-3</h1>
+                  <p>-XXXXXXXX</p>
                 </div>
-                <img class="client-ceo-logoimage" src="./assets/brutanixceologo.png" />
+                <img
+                  class="client-ceo-logoimage"
+                  src="./assets/brutanixceologo.png"
+                />
               </div>
               <p class="card-cep-para client-card-cep-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Outstanding web development, boosting online presence. Your work
+                is a valuable contribution to our company's success. Thank you
+                very much.
               </p>
             </div>
 
             <div class="card-ceo-section clietn-card" style="--delay: 2">
-              <div class="card-ceo-header">
+              <div class="card-ceo-header client-card-header">
                 <img
                   class="ceo-image client-ceo-image"
-                  src="./assets/brutanixceoimg.png"
+                  src="./assets/clientimage-1.png"
                 />
-                <div class="card-ceo-details  client-card-ceo-details">
-                  <h1>person-4</h1>
+                <div class="card-ceo-details client-card-ceo-details">
+                  <h1>Shashidar Kumar</h1>
                   <p>- CEO, Franklin EV</p>
                 </div>
-                <img class="client-ceo-logoimage" src="./assets/brutanixceologo.png" />
-              </div>
-              <p class="card-cep-para client-card-cep-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div> 
-
-           <div class="card-ceo-section clietn-card" style="--delay: 3">
-              <div class="card-ceo-header">
                 <img
-                  class="ceo-image client-ceo-image"
-                  src="./assets/brutanixceoimg.png"
+                  class="client-ceo-logoimage"
+                  src="./assets/brutanixceologo.png"
                 />
-                <div class="card-ceo-details  client-card-ceo-details">
-                  <h1>person-5</h1>
-                  <p>- CEO, Franklin EV</p>
-                </div>
-                <img class="ceo-logoimage" src="./assets/brutanixceologo.png" />
               </div>
               <p class="card-cep-para client-card-cep-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Your website development is remarkable. It looks great, works
+                well, and helps us stand out online. Thanks for your excellent
+                contribution to our company's success.
               </p>
             </div>
 
-            
+            <div class="card-ceo-section clietn-card" style="--delay: 3">
+              <div class="card-ceo-header">
+                <img
+                  class="ceo-image client-ceo-image"
+                  src="./assets/tycoceoimage.jpeg"
+                />
+                <div class="card-ceo-details client-card-ceo-details">
+                  <h1>Rakesh Sharma</h1>
+                  <p>- CEO, Tycoo indst</p>
+                </div>
+                <img
+                  class="client-ceo-logoimage work-ceo-image"
+                  src="./assets/brutanixceologo.png"
+                />
+              </div>
+
+              <p class="card-cep-para client-card-cep-para">
+                Impressive web development, elevating online presence, valuable
+                contribution to our company's success. Thank you for your work.
+              </p>
+            </div>
           </div>
+
         </div>
       </div>
 
       <!-- ____________________________________contactus section___________________________________-->
-      <div class="contact-bg-container base-container">
+      <div id="contact" class="contact-bg-container base-container">
         <h1 class="contact-main-heading">Get in Touch</h1>
 
         <div class="contact-left-right-holder">
           <div class="contact-left-part">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit
+              We welcome your communication and value the opportunity to engage
+              with you. Whether you have inquiries, feedback, or wish to explore
+              potential collaborations, please feel free to get in touch with
+              us. Your questions and insights are important to us. You can reach
+              out through our website's contact form, or you can contact us
+              directly via email at contact@brutanix.com.
             </p>
             <div class="contact-left-bottom">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit
+                Our dedicated team is committed to promptly addressing your
+                needs and providing the information
               </p>
               <a class="contact-brutanix" href="#">contact@brutanix.com</a>
             </div>
           </div>
 
           <div class="contact-right-part">
-            <form id="contact-form">
+            <form
+              onsubmit="ContactUs();reset();return false;"
+              id="contact-form"
+            >
               <div class="widget">
                 <label>Enter Your Name</label>
-                <input type="text" />
+                <input id="contact_name" type="text" />
               </div>
 
               <div class="widget">
                 <label>Enter Your Mobile</label>
-                <input type="text" />
+                <input id="contact_mobile" type="text" />
               </div>
 
               <div class="widget">
                 <label>Enter Your Email</label>
-                <input type="email" />
+                <input id="contact_email" type="email" />
               </div>
 
               <div class="widget">
                 <label>Tell us Something about your Project</label>
-                <textarea rows="10"></textarea>
+                <textarea id="contact_message" rows="10"></textarea>
               </div>
-              <div class="widget-button">
-                <button class="contact-fomr-button">Submit</button>
+              <div id="button-widget" class="widget-button">
+                <!-- Button trigger modal -->
+                <button
+                  type="submit"
+                  class="contact-fomr-button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Submit
+                </button>
               </div>
             </form>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="contact-pop-model modal-content">
+                  <div class="modal-header">
+                    <h1
+                      id="modal_header_heading"
+                      class="modal-title fs-5"
+                      id="exampleModalLabel"
+                    >
+                      Modal title
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      id="popupclosebutton"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div id="modal-body" class="modal-body">...</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -702,7 +775,6 @@
       <div class="footer-bg-container">
         <img class="footer-stamp" src="./assets/brutanix_stamp.png" />
         <div class="footer-inner-container base-container">
-
           <div class="fotter-contacts">
             <img
               class="contact-brutannix-footer"
@@ -774,12 +846,12 @@
           </div>
           <div class="fotter-navigations">
             <h1>Navigation</h1>
-            <p>Home</p>
-            <p>Works</p>
-            <p>Services</p>
-            <p>About Us</p>
-            <p>Blogs</p>
-            <p>Careers</p>
+            <p><a href="#home">Home</a></p>
+            <p><a href="#work">Works</a></p>
+            <p><a href="#services">Services</a></p>
+            <p><a href="#about">About Us</a></p>
+            <p><a>Blogs</a></p>
+            <p><a>Careers</a></p>
           </div>
           <div class="fotter-socials">
             <h1>We are Social</h1>
@@ -815,6 +887,7 @@
                 </g>
               </svg>
 
+              <!-- <a href="https://www.instagram.com/brutanix/"> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="35"
@@ -826,6 +899,7 @@
                   d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z"
                 />
               </svg>
+              <!-- </a> -->
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -879,5 +953,63 @@
     ></script>
     <script src="index.js"></script>
     <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      const popupclosebutton = document.getElementById("popupclosebutton");
+      const button_widget = document.getElementById("button-widget");
+      const errorpara = document.getElementById("error-para");
+      const modal_body = document.getElementById("modal-body");
+      const modal_header_heading = document.getElementById(
+        "modal_header_heading"
+      );
+
+      function ContactUs() {
+        const contact_name = document.getElementById("contact_name").value;
+        const contact_mobile = document.getElementById("contact_mobile").value;
+        const contact_email = document.getElementById("contact_email").value;
+        const contact_message =
+          document.getElementById("contact_message").value;
+        const messageBody =
+          "Name: " +
+          contact_name +
+          "<br/>Mobile: " +
+          contact_mobile +
+          "<br/>Email: " +
+          contact_email +
+          "<br/>Message: " +
+          contact_message;
+
+        if (
+          contact_name == "" ||
+          contact_message == "" ||
+          contact_email == "" ||
+          contact_mobile == ""
+        ) {
+          modal_body.textContent = "Please enter all input details";
+          modal_header_heading.textContent = "Fill Required";
+          modal_header_heading.style.cssText =
+            "color:red;font-size:18px !important";
+          setTimeout(() => {
+            popupclosebutton.click();
+          }, 3000);
+        } else {
+          Email.send({
+            SecureToken: "c37515f2-7625-4a52-9ace-a77b4494d52c",
+            To: "contact@brutanix.com",
+            From: "contact@brutanix.com",
+            Subject: "This is the subject",
+            Body: messageBody,
+          }).then((messaage) => console.log(messaage));
+          setTimeout(() => {
+            popupclosebutton.click();
+          }, 3000);
+          modal_body.textContent =
+            "Thanks for contacting us we will get you shortly";
+          modal_header_heading.textContent = "Submitted Successfully";
+          modal_header_heading.style.cssText =
+            "color:green;font-size:18px !important";
+        }
+      }
+    </script>
   </body>
 </html>
